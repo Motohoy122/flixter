@@ -74,3 +74,6 @@ end
 
 # For forms
 gem 'simple_form'
+
+# For sign up and sign in 
+gem 'devise'
