@@ -76,3 +76,12 @@ body {
 #remember {
   padding-left: 4%;
 }
+
+/*Lecture notes had this labeled as .help-block*/
+.invalid-feedback {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin: 10px;
+}
