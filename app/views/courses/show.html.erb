@@ -1,0 +1,31 @@
+<br />
+
+<div class="booyah-box col-10 offset-1">
+  <div class="row">
+    <div class="col col-9">
+      <h1><%= @course.title %></h1>
+    </div>
+    <div class="col col-3 text-center align-middle">
+      <span class="badge badge-default">
+          <%= number_to_currency @course.cost %>
+      </span>
+    </div>
+  </div>
+    <br />
+    <div class="row">
+      <div class="col col-12">
+        <%= @course.description %>
+      </div>
+    </div>
+  <br>
+  <div class="row">
+    <div class="col offset-1 text-right">
+      <% if current_user && current_user == @course.user %>
+        <br />
+        <br />
+        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+      <% end %>
+    </div>
+    
+  </div>
+</div>
