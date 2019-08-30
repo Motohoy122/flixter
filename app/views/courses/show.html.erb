@@ -5,7 +5,7 @@
     <div class="col col-9">
       <h1><%= @course.title %></h1>
     </div>
-    <div class="col col-3 text-center align-middle">
+    <div class="col col-3 text-center align-middle" id="course-cost">
       <span class="badge badge-default">
           <%= number_to_currency @course.cost %>
       </span>
@@ -17,13 +17,13 @@
         <%= @course.description %>
       </div>
     </div>
-  <br>
+
   <div class="row">
-    <div class="col offset-1 text-right">
+    <div class="col offset-1 text-right" id="course-button">
       <% if current_user && current_user == @course.user %>
         <br />
         <br />
-        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+        <%= link_to 'Add Course', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
       <% end %>
     </div>
     
