@@ -77,3 +77,5 @@ gem 'simple_form'
 
 # For sign up and sign in 
 gem 'devise'
+
+gem 'carrierwave', '~> 2.0'
