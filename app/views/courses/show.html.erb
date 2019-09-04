@@ -14,7 +14,7 @@
     <br />
     <div class="row">
       <div class="col col-12">
-        <%= image_tag @course.image, class: 'img-fluid' %>
+        <%= image_tag @course.image.url.to_s, class: 'img-fluid' %>
         <%= @course.description %>
       </div>
     </div>
