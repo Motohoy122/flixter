@@ -4,6 +4,8 @@
   <br>
   <div class="text-center">
     <%= image_tag current_course.image.url.to_s, class: 'img-fluid' %>
+    <br>
+    <br>
     <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-lg' %>
   </div>
   <br class="clear">
