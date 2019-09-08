@@ -2,17 +2,6 @@ class Instructor::CoursesController < ApplicationController
   before_action :authenticate_user!
   before_action :require_authorized_for_current_course, only: [:show]
 
-  before_action :require_enrollment_for_current_course
-
-  private
-
-  def require_enrollment_for_current_course
-
-    if current_lesson.section.course.user.enrolled_in? = false
-      render plain: "Unauthorized", status: :unauthorized
-    end
-  end
-
   def new 
     @course = Course.new
   end
