@@ -84,3 +84,6 @@ gem "figaro"
 gem 'carrierwave-aws'
 
 gem "mini_magick"
+
+# Credit Cards
+gem 'stripe'
