@@ -87,3 +87,6 @@ gem "mini_magick"
 
 # Credit Cards
 gem 'stripe'
+
+# database support
+gem 'ranked-model'
