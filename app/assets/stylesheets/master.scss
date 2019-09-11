@@ -140,6 +140,7 @@ ul {
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
   margin: 20px;
+  box-shadow: 4px 4px rgba(0,0,0,.4);
 }
 
 ul .header {
@@ -151,19 +152,19 @@ ul .header .fa {
 }
 
 .lessons li {
-  background: rgb(119,136,153);
+  background: rgb(180, 197, 231);
   color: white;
   margin: 10px;
   font-family: "Helvetica Neue", Helvetica;
-  font-weight: 100;
+  font-weight: 400;
   padding: 8px;
   font-size: 15px;
-  box-shadow: 2px 4px rgba(0,0,0,.6);
+  box-shadow: 2px 2px rgba(0,0,0,.4);
 }
 
 .lessons li b {
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .lessons li p {
